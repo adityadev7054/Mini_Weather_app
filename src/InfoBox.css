@@ -1,0 +1,35 @@
+.infobox{
+    text-align: center;
+    padding: 10px;
+}
+
+.cardbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cardbox > * {
+    min-width: 280px;
+    max-width: 345px;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .cardbox > * {
+        max-width: 100%;
+        min-width: auto;
+    }
+    
+    .infobox {
+        padding: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .cardbox > * {
+        width: 345px;
+    }
+}
